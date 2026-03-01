@@ -1,0 +1,20 @@
+##fileformat=VCFv4.2
+##fileDate=20260301
+##source=bcftools_annotate_clinvar_simulated
+##reference=GRCh37
+##contig=<ID=4,length=191154276>
+##contig=<ID=7,length=159138663>
+##contig=<ID=X,length=155270560>
+##INFO=<ID=GENEINFO,Number=.,Type=String,Description="Gene(s) reported by ClinVar">
+##INFO=<ID=CLNSIG,Number=.,Type=String,Description="ClinVar clinical significance">
+##INFO=<ID=CLNDN,Number=.,Type=String,Description="ClinVar disease name(s)">
+##INFO=<ID=CLNACC,Number=.,Type=String,Description="ClinVar accessions">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant">
+##INFO=<ID=REPEAT_UNIT,Number=1,Type=String,Description="Repeat unit (for STR-style records)">
+##INFO=<ID=REPEAT_COUNT,Number=1,Type=Integer,Description="Repeat count (for STR-style records)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE_001
+7	117199646	VCV000007110.26	CTT	C	.	PASS	GENEINFO=CFTR:1080;CLNSIG=Pathogenic;CLNDN=Cystic_fibrosis;CLNACC=VCV000007110.26	GT	0/1
+4	3074876	.	CAG	<STR>	.	PASS	SVTYPE=STR;END=3074995;REPEAT_UNIT=CAG;REPEAT_COUNT=40	GT	0/1
+X	31133847	VCV000531561.4	A	AT	.	PASS	GENEINFO=DMD:1756;CLNSIG=Pathogenic;CLNDN=Duchenne_muscular_dystrophy;CLNACC=VCV000531561.4	GT	0/1
